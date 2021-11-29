@@ -17,7 +17,7 @@ import { motion } from "framer-motion"
 // 	}
 // }
 
-export default function Layout({ img }) {
+export default function Layout({ children }) {
 	return (
 		<div>
 			<div className="fixed font-space-grotesk w-full h-full inset-0">
@@ -47,15 +47,8 @@ export default function Layout({ img }) {
 							</div>
 						</div>
 					</div>
-					<motion.div
-						animate={{ opacity: 1, y: 0 }}
-						initial={{ opacity: 0, y: 20 }}
-						exit={{ opacity: 0, y: -20 }}
-						transition={{ duration: 0.15 }}
-						className="z-0"
-					>
-						<Image src={img} layout="fill" objectFit="cover" alt="background image" />
-					</motion.div>
+
+					<div>{children}</div>
 				</div>
 			</div>
 		</div>
