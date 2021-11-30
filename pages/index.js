@@ -18,9 +18,9 @@ const imageVariants = {
 }
 function Home() {
 	return (
-		<motion.div variants={imageVariants} initial="exit" animate="enter" exit="exit">
-			<Image src={wallpaperImg} layout="fill" alt="img" objectFit="cover" />
-		</motion.div>
+		<Layout>
+Hey
+		</Layout>
 	)
 }
 
