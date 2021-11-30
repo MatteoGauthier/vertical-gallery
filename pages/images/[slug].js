@@ -27,8 +27,8 @@ export default function ImageSlugPage({ imageSrc }) {
 				{/* <img src={'/images/'+ imageSrc} loading="lazy" className="absolute object-cover inset-0 w-full h-full" alt="" /> */}
 				<Image
 					src={require("../../public/images/" + imageSrc)}
-					width={1440}
-					height={1200}
+					// width={1440}
+					// height={1200}
 					layout="fill"
 					priority
 					alt="img"

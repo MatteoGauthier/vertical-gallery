@@ -64,7 +64,7 @@ export default function Layout({ children, routeChange }) {
 					</div>
 				</div>
 
-				<PageTransition routeChange={routeChange}>
+				<PageTransition routeKey={router.asPath}>
 					<div>{children}</div>
 				</PageTransition>
 			</div>

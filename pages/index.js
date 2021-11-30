@@ -17,11 +17,7 @@ const imageVariants = {
 	},
 }
 function Home() {
-	return (
-		<Layout>
-Hey
-		</Layout>
-	)
+	return <Layout>Hey</Layout>
 }
 
 export default Home
